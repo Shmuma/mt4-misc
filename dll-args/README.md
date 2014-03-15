@@ -7,4 +7,7 @@ If we have a dll routine which accepts two string arguments, call to this routin
 
 Example dll has function test_bug which sends both it's arguments to debugger (you need DebugView running to see them: http://technet.microsoft.com/en-us/sysinternals/bb896647.aspx)
 
-Script dll_args.mq4 on MT4 build 610 gives result in debugview.png, which is incorrect, as first call to test_bug assigns first argument's value to second argument.
+Script dll_args.mq4 on MT4 build 610 gives incorrect results, as first call to test_bug assigns first argument's value to second argument.
+
+Debugview screenshot:
+https://raw.github.com/Shmuma/mt4-misc/master/dll-args/debugview.png
